@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Телефонная книга</title>
+  <link rel="icon" href="img/icon.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/tel/phonebook/phonebook/css/style.css">
+
+  <script src="bundle.js"></script>
+  
+  <script src="/tel/phonebook/phonebook/script/script.js" defer></script>
+  <script src="/tel/phonebook/modules/createElements.js" defer></script>
+  <script src="/tel/phonebook/modules/serviceStorage.js" defer></script>
+  <script src="/tel/phonebook/modules/control.js" defer></script>
+  <script src="/tel/phonebook/modules/render.js" defer></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      phoneBookInit('#app','Иван');
+    });
+
+  </script>
+<!--  работа делегировнаия на примере выбора мест в залах-->
+<!--  <link rel="stylesheet" href="hall/hall.css">-->
+<!--  <script src="hall/hall.js" defer></script>-->
+</head>
+
+<body>
+<div id="app"></div>
+<input class = "themeButton" type="button" onclick="javascript:changeTheme();"/> 
+
+</body>
+</html>
